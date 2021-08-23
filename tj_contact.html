@@ -1,0 +1,94 @@
+<!-- Written by TanJid -->
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>TanJid Creations | Contact</title>
+       <link rel="stylesheet" href="tj_style/tj_style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+       <!-- 
+       <meta http-equiv = "refresh" content = "5; url = tj_main.html" />
+       -->
+   </head>
+   <body>
+       
+       <div class="teejay">
+           <nav>
+               <a href="index.html">
+                    <img src="tj_portfolio_site_img/logo.png" class="logo">
+               </a>
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="tj_about.html">ABOUT</a></li>
+                   <li><a href="tj_portfolio.html">PORTFOLIO</a></li>
+                   <li><a href="tj_contact.html">CONTACT</a></li>
+               </ul>
+               <img src="tj_portfolio_site_img/moon.png" id="dark-toggle" title="Toggle Dark/Light Mode">
+           </nav>
+           
+           <div class="teejayVid3">
+               <h1><span>CONTACT</span> ME</h1>
+           </div>
+           
+           <div class="teejayVid3">
+               <h1><br></h1>
+           </div>
+           
+           
+           <div class="teejayVid3">
+               
+               <p class="inf"><span>E-Mail</span> : tanjid.creations@gmail.com<br><span>Phone</span> : +880 1799 391-731</p>
+               
+           </div>
+           
+           
+           <div class="socials-cont">
+               <a href="https://www.linkedin.com/in/djtanjid/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.behance.net/tanjid_creations" target="_blank"><i class="fab fa-behance"></i></a>
+               <a href="https://www.facebook.com/dj.tanjid" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.youtube.com/WolverainX" target="_blank"><i class="fab fa-youtube"></i></a>
+               <a href="https://soundcloud.com/dj_tanjid" target="_blank"><i class="fab fa-soundcloud"></i></a>
+               <a href="https://twitter.com/dj_tanjid" target="_blank"><i class="fab fa-twitter"></i></a>
+           </div>
+       </div>
+       
+       <script>
+           //Dark Mode Toggle Script
+           var dark = document.getElementById("dark-toggle");
+           
+           
+           if(localStorage.getItem("theme") == null)
+              {
+                localStorage.setItem("theme", "light");
+              }
+           
+           let localData = localStorage.getItem("theme");
+           
+           if(localData == "light")
+               {
+                   dark.src = "tj_portfolio_site_img/moon.png";
+                   document.body.classList.remove("dark-mode");
+               }
+           else if (localData == "dark")
+               {
+                   dark.src = "tj_portfolio_site_img/sun.png";
+                   document.body.classList.add("dark-mode");
+               }
+           
+           dark.onclick = function()
+           {
+               document.body.classList.toggle("dark-mode");
+               if(document.body.classList.contains("dark-mode"))
+                   {
+                       dark.src = "tj_portfolio_site_img/sun.png";
+                       localStorage.setItem("theme", "dark");
+                   }
+               else
+                   {
+                       dark.src = "tj_portfolio_site_img/moon.png";
+                       localStorage.setItem("theme", "light");
+                   }
+           }
+       </script>
+       
+   </body>
+</html>

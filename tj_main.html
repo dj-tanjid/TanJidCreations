@@ -1,0 +1,109 @@
+<!-- Written by TanJid -->
+<!DOCTYPE html>
+<html>
+   <head> 
+       <title>TanJid Creations | Home</title>
+       <link rel="stylesheet" href="tj_style/tj_style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+       
+   <body>
+       <div class="teejay">
+           <nav>
+               <a href="index.html">
+                    <img src="tj_portfolio_site_img/logo.png" class="logo">
+               </a>
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="tj_about.html">ABOUT</a></li>
+                   <li><a href="tj_portfolio.html">PORTFOLIO</a></li>
+                   <li><a href="tj_contact.html">CONTACT</a></li>
+               </ul>
+               <img src="tj_portfolio_site_img/moon.png" id="dark-toggle" title="Toggle Dark/Light Mode">
+           </nav>
+           <div class="info">
+               <h1>I'm <span>Tanjidul</span> Hossain</h1>
+               <p class="inf">This is my official portfolio website to showcase all my works related to <br>VFX, Motion Graphics, Video Editing, Sound Designing etc.</p>
+               
+               <a href="https://drive.google.com/uc?export=download&id=1sT-efJ3Wss2RyvhjBjkVgoak-Kllg_FX">
+                   <button id="tj_btn">
+                       <p id="tj_btnText">DOWNLOAD CV</p>
+                       <div class="check-box">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                               <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                       </div>
+                   </button>
+               </a>
+           </div>
+           
+           <div class="img-box">
+               <img src="tj_portfolio_site_img/pattern.png" class="back-img">
+               <img src="tj_portfolio_site_img/TeeJay.png" class="main-img">
+           </div>
+           
+           <div class="socials">
+               <a href="https://www.linkedin.com/in/djtanjid/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.behance.net/tanjid_creations" target="_blank"><i class="fab fa-behance"></i></a>
+               <a href="https://www.facebook.com/dj.tanjid" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.youtube.com/WolverainX" target="_blank"><i class="fab fa-youtube"></i></a>
+               <a href="https://soundcloud.com/dj_tanjid" target="_blank"><i class="fab fa-soundcloud"></i></a>
+               <a href="https://twitter.com/dj_tanjid" target="_blank"><i class="fab fa-twitter"></i></a>
+           </div>
+       </div>
+       
+       <script>
+           //CV Button Script
+           var btn = document.getElementById("tj_btn");
+           var btnText = document.getElementById("tj_btnText");
+           
+           btn.onclick = function()
+           {
+               btnText.innerHTML = "Thank You";
+               btn.classList.add("active");
+               /*popup = window.open("https://drive.google.com/uc?export=download&id=1gmiXLfouMD8qD6c99B2tJLvfy32knoV8", "", "width=,height=,resizable=no");
+               window.blur();
+               window.focus();*/
+           }
+           
+           
+           //Dark Mode Toggle Script
+           var dark = document.getElementById("dark-toggle");
+           
+           
+           if(localStorage.getItem("theme") == null)
+              {
+                localStorage.setItem("theme", "light");
+              }
+           
+           let localData = localStorage.getItem("theme");
+           
+           if(localData == "light")
+               {
+                   dark.src = "tj_portfolio_site_img/moon.png";
+                   document.body.classList.remove("dark-mode");
+               }
+           else if (localData == "dark")
+               {
+                   dark.src = "tj_portfolio_site_img/sun.png";
+                   document.body.classList.add("dark-mode");
+               }
+           
+           dark.onclick = function()
+           {
+               document.body.classList.toggle("dark-mode");
+               if(document.body.classList.contains("dark-mode"))
+                   {
+                       dark.src = "tj_portfolio_site_img/sun.png";
+                       localStorage.setItem("theme", "dark");
+                   }
+               else
+                   {
+                       dark.src = "tj_portfolio_site_img/moon.png";
+                       localStorage.setItem("theme", "light");
+                   }
+           }
+       </script>
+       
+   </body>
+</html>
