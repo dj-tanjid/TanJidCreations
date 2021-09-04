@@ -345,7 +345,6 @@ span{
     padding-bottom: 1%;
     padding-right: 42%;
     padding-left: 4%;
-    background: #DDDBCF;
     text-align: center;
 }
 
@@ -360,6 +359,7 @@ span{
 }
 
 .app-list h2{
+    color: var(--secondary-color);
     padding-left: 0%;
 }
 
