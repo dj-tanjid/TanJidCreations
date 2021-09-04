@@ -109,7 +109,7 @@ nav ul{
 }
 
 .teejayVid4{
-    margin: 50px 80px;
+    margin: 1% 5%;
 }
 
 .teejayVid4 h1{
@@ -157,6 +157,8 @@ nav ul li a:hover{
 }
 
 .info{
+    padding-right: 20%;
+    background: #DDDBCF;
     margin-left: 8%;
     margin-top: 12%;
 }
@@ -173,6 +175,12 @@ nav ul li a:hover{
 }
 
 .inf{
+    padding-right: 42%;
+    text-align: justify;
+    color: #606163;
+}
+
+.inf2{
     color: #606163;
 }
 
@@ -331,6 +339,32 @@ span{
 }
 
 
+
+.app-list{
+    padding-top: 0%;
+    padding-bottom: 1%;
+    padding-right: 42%;
+    padding-left: 4%;
+    background: #DDDBCF;
+    text-align: center;
+}
+
+.app-list img{
+    vertical-align: middle;
+    color: var(--secondary-color);
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 5%;
+}
+
+.app-list h2{
+    padding-left: 0%;
+}
+
+
+
 .ico-slider{
     text-align: center;
     padding-top: 10px;
@@ -338,6 +372,7 @@ span{
     padding-left: 4%;
     background: #DDDBCF;
 }
+
 
 .ico-slider h2{
     padding-left: 0%;
@@ -382,3 +417,4 @@ span{
 .copy{
     padding-top: 250px;
 }
+
