@@ -1,0 +1,112 @@
+<!-- Written by TanJid -->
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>TanJid Creations | VFX Breakdowns</title>
+       <link rel="icon" href="tj_portfolio_site_img/logo.png" type="image/icon type">
+       
+       <link rel="stylesheet" href="tj_style/tj_style.css">
+       <!-- 
+       <meta http-equiv = "refresh" content = "5; url = tj_main.html" />
+       -->
+   </head>
+   <body>
+       
+       <div class="teejay">
+           
+           <nav>
+               <a href="index.html">
+                    <img src="tj_portfolio_site_img/logo.png" class="logo">
+               </a>
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="tj_about.html">ABOUT</a></li>
+                   <li><a href="tj_portfolio.html">PORTFOLIO</a></li>
+                   <li><a href="tj_contact.html">CONTACT</a></li>
+               </ul>
+               <img src="tj_portfolio_site_img/moon.png" id="dark-toggle" title="Toggle Dark/Light Mode">
+           </nav>
+           
+           <div class="teejayVid">
+               <h1>VFX <span>Breakdowns</span></h1>
+               
+           </div>
+           
+           <div class="teejayVid">
+               <p class="inf2">"Today, with computer-generated visual effects, everything is possible. So we've seen everything. If it can be imagineed, it cah be put on screen."<br>– Gabriel Campisi</p>  
+           </div>
+           
+           <div class="teejayVid5">
+               <a href="tj_portfolio.html">
+                   <button id="vfx_btn">
+                       <p id="tj_btnText">Video Portfolio</p>
+                   </button>
+               </a>
+           </div>
+           
+           <div class="teejayVid">
+               <div class="teejayVid2">
+                   
+                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fhash.advert%2Fvideos%2F541000856976766%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                   
+                   <iframe width="560" height="314" src="https://www.youtube.com/embed/0aFpmdQE3Pc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                   <iframe src="https://drive.google.com/file/d/1tPa8k2Ef8TNQ-Qbl--dZwFmwk6xDl3-k/preview" frameborder="0" width="560" height="314"></iframe>
+                   
+                   <iframe src="https://drive.google.com/file/d/1a1I1h9sl59BdnD3mqM-sf2oR_ncmovpK/preview" frameborder="0" width="560" height="314"></iframe>
+                   
+                   <iframe src="https://drive.google.com/file/d/1Fi933JYfAMS-gvEoPkS_EL7XQJ-3JyB7/preview" frameborder="0" width="560" height="314"></iframe>
+                   
+                   <iframe src="https://drive.google.com/file/d/1rmUfdGq1tyVhAA9eat7QTbmhkEsiXwAK/preview" frameborder="0" width="560" height="314"></iframe>
+              
+                   <iframe width="560" height="314" src="https://www.youtube.com/embed/-vQvtGU7TGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+
+               </div>
+               
+           </div>
+           
+           
+       </div>
+       
+       <script>
+           //Dark Mode Toggle Script
+           var dark = document.getElementById("dark-toggle");
+           
+           
+           if(localStorage.getItem("theme") == null)
+              {
+                localStorage.setItem("theme", "light");
+              }
+           
+           let localData = localStorage.getItem("theme");
+           
+           if(localData == "light")
+               {
+                   dark.src = "tj_portfolio_site_img/moon.png";
+                   document.body.classList.remove("dark-mode");
+               }
+           else if (localData == "dark")
+               {
+                   dark.src = "tj_portfolio_site_img/sun.png";
+                   document.body.classList.add("dark-mode");
+               }
+           
+           dark.onclick = function()
+           {
+               document.body.classList.toggle("dark-mode");
+               if(document.body.classList.contains("dark-mode"))
+                   {
+                       dark.src = "tj_portfolio_site_img/sun.png";
+                       localStorage.setItem("theme", "dark");
+                   }
+               else
+                   {
+                       dark.src = "tj_portfolio_site_img/moon.png";
+                       localStorage.setItem("theme", "light");
+                   }
+           }
+       </script>
+       
+   </body>
+</html>
