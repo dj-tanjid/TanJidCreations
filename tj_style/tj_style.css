@@ -435,3 +435,8 @@ span{
     padding-top: 250px;
 }
 
+.footer{
+    text-align: center;
+    font-size: 10px;
+    background: #DDDBCF;
+}
