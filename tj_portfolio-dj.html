@@ -1,0 +1,105 @@
+<!-- Written by TanJid -->
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>TanJid Creations | VFX Breakdowns</title>
+       <link rel="icon" href="tj_portfolio_site_img/TJ_Avatar.png" type="image/icon type">
+       
+       <link rel="stylesheet" href="tj_style/tj_style.css">
+       <!-- 
+       <meta http-equiv = "refresh" content = "5; url = tj_main.html" />
+       -->
+   </head>
+   <body>
+       
+       <div class="teejay">
+           
+           <nav>
+               <a href="index.html">
+                    <img src="tj_portfolio_site_img/logo.png" class="logo">
+               </a>
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="tj_about.html">ABOUT</a></li>
+                   <li><a href="tj_portfolio.html">PORTFOLIO</a></li>
+                   <li><a href="tj_contact.html">CONTACT</a></li>
+               </ul>
+               <img src="tj_portfolio_site_img/moon.png" id="dark-toggle" title="Toggle Dark/Light Mode">
+           </nav>
+           
+           <div class="teejayVid">
+               <h1><span>DJ</span> Productions</h1>
+               
+           </div>
+           
+           <div class="teejayVid">
+               <p class="inf2">"I didn't come up as a DJ, so I don't play by DJ rules."<br>– Deadmau5</p>  
+           </div>
+           
+           <div class="teejayVid5">
+               <a href="tj_portfolio.html">
+                   <button id="vfx_btn">
+                       <p id="tj_btnText">Video Portfolio</p>
+                   </button>
+               </a>
+               
+               <div class="teejayVid6"></div>
+               
+               <a href="tj_portfolio-vfx.html">
+                   <button id="vfx_btn">
+                       <p id="tj_btnText">VFX Breakdowns</p>
+                   </button>
+               </a>
+           </div>
+           
+           <div class="teejayVid7">
+               <div class="teejayVid2">
+                   
+                   <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1455350977&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                   
+               </div>
+           </div> 
+           
+       </div>
+       
+       <script>
+           //Dark Mode Toggle Script
+           var dark = document.getElementById("dark-toggle");
+           
+           
+           if(localStorage.getItem("theme") == null)
+              {
+                localStorage.setItem("theme", "light");
+              }
+           
+           let localData = localStorage.getItem("theme");
+           
+           if(localData == "light")
+               {
+                   dark.src = "tj_portfolio_site_img/moon.png";
+                   document.body.classList.remove("dark-mode");
+               }
+           else if (localData == "dark")
+               {
+                   dark.src = "tj_portfolio_site_img/sun.png";
+                   document.body.classList.add("dark-mode");
+               }
+           
+           dark.onclick = function()
+           {
+               document.body.classList.toggle("dark-mode");
+               if(document.body.classList.contains("dark-mode"))
+                   {
+                       dark.src = "tj_portfolio_site_img/sun.png";
+                       localStorage.setItem("theme", "dark");
+                   }
+               else
+                   {
+                       dark.src = "tj_portfolio_site_img/moon.png";
+                       localStorage.setItem("theme", "light");
+                   }
+           }
+       </script>
+       
+   </body>
+</html>

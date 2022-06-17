@@ -57,6 +57,18 @@ nav ul{
     transition: 1s;/*BGFade*/
 }
 
+.teejayVid h1{
+    font-size: 54px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.teejayVid p{
+    /*color: #606163;*/
+    line-height: 22px;
+}
+
+
 .teejayVid2{
     text-align: center;
     margin: 10px 80px;
@@ -85,16 +97,6 @@ nav ul{
     transition: 1s;/*BGFade*/
 }
 
-.teejayVid h1{
-    font-size: 54px;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-
-.teejayVid p{
-    /*color: #606163;*/
-    line-height: 22px;
-}
 
 .teejayVid3 h1{
     font-size: 54px;
@@ -140,6 +142,21 @@ nav ul{
 .teejayVid5 button:hover{
     background: #ff4321;
 }
+
+.teejayVid6{
+    text-align: center;
+    margin: 10px 10px;
+}
+
+
+.teejayVid7{
+    width: 100%;
+    /*height: 100vh;*/
+    background: var(--primary-color);
+    justify-content: center;
+    transition: 1s;/*BGFade*/
+}
+
 
 
 nav{
