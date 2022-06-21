@@ -37,6 +37,14 @@ nav ul{
     transition: 1s;/*BGFade*/
 }
 
+.teejayAlt{
+    width: 100%;
+    /*height: 100vh;*/
+    background: var(--primary-color);
+    position: relative;
+    transition: 1s;/*BGFade*/
+}
+
 .teejayEgg{
     
     width: 100%;
@@ -345,7 +353,12 @@ span{
 
 .socials{
     margin-left: 8%;
-    margin-top: 8%;
+    /*margin-top: 1%;*/
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
 }
 
 .socials a{
@@ -409,7 +422,9 @@ span{
     padding-top: 10px;
     padding-right: 42%;
     padding-left: 4%;
+    /*background: linear-gradient(var(--primary-color), #DDDBCF, var(--primary-color));*/
     background: #DDDBCF;
+    
 }
 
 
