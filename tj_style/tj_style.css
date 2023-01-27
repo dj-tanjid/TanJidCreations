@@ -14,7 +14,7 @@
 }
 
 .dark-mode{
-    --primary-color: #000106;
+    --primary-color: #1d1f21;
     --secondary-color: #DDDBCF;
 }
 
@@ -63,7 +63,7 @@ iframe{
     height: 420px;
     display:inline-flex;
     border-bottom-style: ridge;
-    border-radius: 20px;
+    border-radius: 22px;
     background: #ff4321;;
     margin-bottom: inherit;
     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
@@ -266,11 +266,11 @@ nav ul li a:hover{
 .inf{
     padding-right: 42%;
     text-align: justify;
-    color: #606163;
+    color: #656668;
 }
 
 .inf2{
-    color: #606163;
+    color: #656668;
 }
 
 button{
