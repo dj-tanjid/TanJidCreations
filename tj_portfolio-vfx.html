@@ -4,7 +4,7 @@
    <head>
        <title>TanJid Creations | VFX Breakdowns</title>
        <link rel="icon" href="tj_portfolio_site_img/TJ_Avatar.png" type="image/icon type">
-       
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
        <link rel="stylesheet" href="tj_style/tj_style.css">
        <!-- 
        <meta http-equiv = "refresh" content = "5; url = tj_main.html" />
@@ -187,6 +187,8 @@
            </div>
        </div>
        
+       <button onclick="topFunction()" id="tjTopBtn" title="Go to top" class="fade-out"><i class="fas fa-chevron-circle-up"></i></button>
+       
        <script>
            //Dark Mode Toggle Script
            var dark = document.getElementById("dark-toggle");
@@ -223,6 +225,35 @@
                        dark.src = "tj_portfolio_site_img/moon.png";
                        localStorage.setItem("theme", "light");
                    }
+           }
+           
+           // When the user scrolls down 800px from the top of the document, show the button
+           window.onscroll = function() {scrollFunction()};
+
+           function scrollFunction() {
+               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800)
+               {
+                   // Fade in effect
+                   document.getElementById("tjTopBtn").classList.remove("fade-out");
+                   document.getElementById("tjTopBtn").classList.add("fade-in");
+               }
+               else
+               {
+                   // Fade out effect
+                   document.getElementById("tjTopBtn").classList.remove("fade-in");
+                   document.getElementById("tjTopBtn").classList.add("fade-out");
+               }
+           }
+
+           // When the user clicks on the button, scroll to the top of the document with a smooth effect
+           function topFunction()
+           {
+               var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+               if (currentScroll > 0)
+               {
+                   window.requestAnimationFrame(topFunction);
+                   window.scrollTo(0, currentScroll - (currentScroll / 8));
+               }
            }
        </script>
        
