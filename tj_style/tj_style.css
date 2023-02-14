@@ -8,6 +8,11 @@
     /*transition: 1s;*/
 }
 
+body {
+    background-color: var(--primary-color);
+    padding-top: 60px;
+}
+
 :root{
     --primary-color: #DDDBCF;
     --secondary-color: #2f2f2f;
@@ -24,6 +29,20 @@
     cursor: pointer;
 }
 
+#sticky-element {
+    position: static;
+    background: var(--primary-color);
+    z-index: 999;
+    transition: top 0.2s ease-out;
+}
+
+#sticky-placeholder {
+    height: 60px;
+    background: var(--primary-color);
+    clear: both;
+    visibility: hidden;
+    transition: height 0.2s ease-out;
+}
 
 .teejay{
     width: 100%;
