@@ -83,8 +83,8 @@ iframe{
     border-bottom-style: ridge;
     border-radius: 22px;
     background: #ff4321;
-    margin-bottom: inherit;
-    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    margin: 4px 2px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.4);
 }
 
 .teejayVInfo h2 {
@@ -598,8 +598,8 @@ span{
     cursor: pointer;
     padding: 15px;
     border-radius: 100px;
-    transition: opacity 0.5s linear, transform 0.4s linear;
-    box-shadow: 0px 0px 15px #555;
+    transition: opacity 0.5s linear, transform 0.25s linear;
+    box-shadow: 0px 0px 10px #555;
 }
 
 .fade-in {
