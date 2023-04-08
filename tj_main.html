@@ -11,6 +11,11 @@
     </head>
        
    <body>
+       <!-- Preloader -->
+       <div class="preloader">
+           <img src="tj_portfolio_site_img/preloader.gif" alt="Loading...">
+       </div>
+       
        <div class="teejay">
            <nav>
                <a href="index.html">
@@ -111,6 +116,18 @@
                        localStorage.setItem("theme", "light");
                    }
            }
+           
+           // preloader
+           window.addEventListener("load", function() {
+               const preloader = document.querySelector(".preloader");
+               preloader.classList.add("hide-preloader");
+               
+               /*// Wait for the hide-preloader animation to finish before restoring scroll
+               setTimeout(function() {
+                   document.documentElement.style.overflow = "auto";
+                   document.body.style.overflow = "auto";
+               }, 0);*/
+           });
        </script>
        
        <footer class="footer">

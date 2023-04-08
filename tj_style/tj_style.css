@@ -326,7 +326,7 @@ nav ul li a:hover{
 }
 
 .info h1{
-    font-size: 54px;
+    font-size: 380%;
     color: var(--secondary-color);
     margin-bottom: 20px;
     transition: 1s;
@@ -547,7 +547,7 @@ span{
 .ico-slider{
     text-align: center;
     padding-top: 10px;
-    padding-right: 42%;
+    padding-right: 30%;
     padding-left: 4%;
     /*background: linear-gradient(var(--primary-color), #DDDBCF, var(--primary-color));*/
     background: #D7F3F3;
@@ -560,10 +560,10 @@ span{
 }
 
 .slick-slide{
-    margin: 0 20px;
+    margin: 0 25px;
 }
 .slick-slide img{
-    width: 120%;
+    width: 110%;
 }
 .slick-slider{
     position: relative;
