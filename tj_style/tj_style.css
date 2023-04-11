@@ -57,7 +57,7 @@ body {
     position: static;
     background: var(--primary-color);
     z-index: 999;
-    transition: top 0.2s ease-out;
+    transition: 1s;/*BGFade*/
 }
 
 #sticky-placeholder {
@@ -135,9 +135,20 @@ iframe{
     width: 560px;
 }
 
+.teejayVidS{
+    width: 100%;
+    height: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    transition: 1s;/*BGFade*/
+}
+
 .teejayVid{
     width: 100%;
-    /*height: 100vh;*/
+    /*height: 60%;*/
     background: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -251,7 +262,7 @@ iframe{
 
 .teejayVid8{
     width: 100%;
-    height: 60px;
+    height: 70px;
     background: var(--primary-color);
     display: flex;
     justify-content: center;
