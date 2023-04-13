@@ -558,16 +558,17 @@ span{
 .ico-slider{
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 30%;
     padding-left: 4%;
     /*background: linear-gradient(var(--primary-color), #DDDBCF, var(--primary-color));*/
     background: #D7F3F3;
-    
 }
 
 
 .ico-slider h2{
     padding-left: 0%;
+    padding-right: 21%;
 }
 
 .slick-slide{
