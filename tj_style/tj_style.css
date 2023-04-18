@@ -30,7 +30,7 @@ body {
 
 .preloader img {
     position: absolute;
-    width: 2.5%;
+    width: 45px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -40,6 +40,19 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.preloader p {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    font-size: 9px;
+    text-align: center;
+    position: absolute;
+    padding-top: 125px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .dark-mode{
