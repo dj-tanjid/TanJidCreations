@@ -4,9 +4,10 @@
    <head>
        <title>Let's Go Creative | EasterEgg</title>
        <link rel="icon" href="tj_portfolio_site_img/TJ_Avatar.png" type="image/icon type">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+       
        <link rel="stylesheet" href="tj_style/tj_style.css">
-       <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
        <!-- 
        <meta http-equiv = "refresh" content = "5; url = tj_main.html" />
        -->
@@ -16,6 +17,7 @@
        <div id="preloader"></div>
        
        <div class="teejay">
+           
            
            <nav>
                <a href="index.html">
@@ -39,6 +41,70 @@
                <p class="inf">"When it comes to investing, there is no such thing as a one-size-fits-all portfolio."<br>– Barry Ritholtz</p>  
            </div>
            
+ 
+  
+  <div class="overlay" id="overlay">
+    <span class="close-button" onclick="toggleOverlay()">&times;</span>
+    <div class="logo-list">
+      <img class="clnt_logo" src="tj_portfolio_site_img/Sliders/brac_bil.png" alt="BRAC Institute of Language" title="BRAC Institute of Language">
+      
+    </div>
+  </div>
+           
+           <div class="ico-slider">
+               <h2>
+                   <span>Client</span> Showcase  
+                   <a>
+                       <button id="all_clients" onclick="toggleOverlay()">
+                           <p id="tj_btnText">Show All</p>
+                       </button>
+                   </a>
+               </h2>
+               
+               <div class="all_clnts_div">
+               
+               </div>
+                
+               <p class="inf"><br><p>
+               <section class="customer-logos slider">
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/brac_bil.png" alt="BRAC Institute of Language" title="BRAC Institute of Language"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/bracu.webp" alt="BRAC University" title="BRAC University"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/facd_cab.webp" alt="FACD-CAB" title="FACD-CAB"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/pinnacle_films.png" alt="Pinnacle Films" title="Pinnacle Films"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/rayya.png" alt="logo" title=""></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/shell.png" alt="logo" title=""></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/shell_advance.webp" alt="Shell Advance" title="Shell Advance Motorcycle Oils"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/gp.png" alt="Grameenphone" title="Grameenphone"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/dss.png" alt="Department of Social Services" title="Department of Social Services"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/sic.webp" alt="Ministry of Social Welfare" title="Ministry of Social Welfare"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/HASH.png" alt="HASH Films LTD." title="HASH Films LTD."></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/nsu.webp" alt="North South University" title="North South University"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/nsu-ac.webp" alt="NSU Athletics Club" title="North South University | Athletics Club"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Premier_ Bank.webp" alt="Premier Bank" title="Premier Bank"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/rupali.webp" alt="Rupali Fish" title="Rupali Fish App"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/SNV.png" alt="SNV" title="SNV"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/mona.png" alt="mona Giving" title="mona Giving"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/iecb.png" alt="IECB" title="Information Engineers & Consultants Bangladesh Ltd."></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/pcg.webp" alt="Pinnacle Consultancy Group" title="Pinnacle Consultancy Group"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Anu.webp" alt="Vodrolok's Manufactory" title="Vodrolok's Manufactory"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/bohubrihi.webp" alt="Bohubrihi the Band" title="Bohubrihi the Band"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/essence.png" alt="Essence BD" title="Essence Consultancy BD"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Everest.png" alt="Everest Pharmaceuticals Ltd." title="Everest Pharmaceuticals Ltd."></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/TanuvaAnver.webp" alt="Tanuva Anver" title="Tanuva Anver"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/G-Series_Logo.png" alt="G-Series" title="G-Series"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Excellent_Food_Logo.png" alt="Excellent Food" title="Excellent Food"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Prothom_Alo_Logo.png" alt="Prothom Alo" title="Prothom Alo"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/De_Montfort_University_logo.png" alt="De Montfort University" title="De Montfort University"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/SiniCare-BD_Logo.webp" alt="SiniCare BD" title="SiniCare BD"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/DGSORS_Logo.webp" alt="DGSORS" title="DGSORS"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Export_Promotion_Bureau.webp" alt="Export Promotion Bureau" title="Export Promotion Bureau"></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Trustaira_Logo.png" alt="Trustaira Bangladesh Ltd." title="Trustaira Bangladesh Ltd."></div>
+                   <div class="slide"><img src="tj_portfolio_site_img/Sliders/Lalamove_Logo.webp" alt="Trustaira Bangladesh Ltd." title="Lalamove - Deliver Faster"></div>
+               </section>
+
+           </div>
+           
+           
            
            <div class="teejayVid5">
                <a href="tj_portfolio-vfx.html">
@@ -58,127 +124,45 @@
            
            
            <!-- ShowReel -->
-           <div class="teejayVid">
+           <!--<div class="teejayVid">
                 
                 <iframe width="80%" height="700" src="https://www.youtube.com/embed/6mwzogYyhts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
                
            </div>
-           
-           <div class="teejayVid8">
-               
-               <button id="jump-to-section-1">#self_projects</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-2">#OVCs</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-3">#music_video</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-4">#films</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-4">#motion_designs</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-4">#BTSs</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-4">#showreels</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-4">#documentary</button>
-               
-               <div class="teejayVid9"></div>
-               
-               <button id="jump-to-section-4">#others</button>
-               
-           </div>
-           
-           <div class="teejayVid">
-               
-               <div class="teejayVid2">
-                   <section id="target-section-1">
-                   <div class="teejayVid6">Section</div>
-                   <!-- একাকীত্ব - ৭৬ | Ekakitto - 76 | Official Music Video -->
-                   <div class="teejayVInfo">
-                       <iframe width="560" height="314" src="https://www.youtube.com/embed/mc1KOfI8JZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-                       
-                       <!-- Video Title Text -->
-                       <h2 style="color: #dddbcf">একাকীত্ব - ৭৬ | Ekakitto - 76 | Official Music Video</h2>
-                       <!-- Position & Video Type -->
-                       <p>TanJid<br>Music Video</p>
-                   </div>
-                       
-                   <iframe width="560" height="314" src="https://www.youtube.com/embed/wKoM18SpuR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-                   
-                   <iframe width="560" height="314" src="https://www.youtube.com/embed/IeCLESWMYCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-                   
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F545047693536651%2F&width=560&show_text=false&height=314&appId" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                       
-                   </section>
-                   <section id="target-section-2">
-                   <div class="teejayVid6">Section</div>
-                   
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                   
-                   <iframe width="560" height="314" src="https://www.youtube.com/embed/wKoM18SpuR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-                   
-                   <iframe width="560" height="314" src="https://www.youtube.com/embed/IeCLESWMYCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-                   
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                   
-                   </section>
-                   <section id="target-section-3">
-                   <div class="teejayVid6">Section</div>
-                       
-                   <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F545047693536651%2F&width=560&show_text=false&height=314&appId" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                       
-                   </section>
-                   <section id="target-section-4">
-                   <div class="teejayVid6">Section</div>
-                       
-                   <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F545047693536651%2F&width=560&show_text=false&height=314&appId" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-                   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEssenceHigherStudy%2Fvideos%2F3063081193978400%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                   </section>
-                   
-               </div>
-               
-           </div>
+           -->
            
        </div>
        
        <script>
+           //Slider
+           $(document).ready(function(){
+               $('.customer-logos').slick({
+                   slidesToShow: 6,
+                   slidesToScroll: 1,
+                   autoplay: true,
+                   autoplaySpeed: 0,
+                   speed: 1500,
+                   cssEase: 'linear',
+                   arrows: false,
+                   dots: false,
+                   pauseOnHover: false,
+                   draggable: true,
+                   responsive: [{
+                       breakpoint: 768,
+                       setting: {
+                           slidesToShow: 4
+                       }
+                   }, {
+                       breakpoint: 520,
+                       setting: {
+                           slidesToShow: 3
+                       }
+                   }]
+               });
+           });
+           
+           
+           
            //Dark Mode Toggle Script
            var dark = document.getElementById("dark-toggle");
            
@@ -283,6 +267,13 @@
            window.addEventListener("load", function(){
                loader.style.display="none";
            })
+           
+           //Overlay
+           function toggleOverlay() {
+  var overlay = document.getElementById("overlay");
+  overlay.style.display = overlay.style.display === "none" ? "block" : "none";
+  document.body.classList.toggle("blur"); // Toggle blur class on body
+}
        </script>
        
    </body>
