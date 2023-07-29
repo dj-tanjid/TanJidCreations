@@ -14,12 +14,7 @@
        -->
    </head>
    <body>
-       <!-- Preloader -->
-       <div class="preloader">
-           <img src="tj_portfolio_site_img/preloader.gif" alt="Loading...">
-           <p><span>Your experience is almost ready to unfold!</span><br><br>The first load may take a moment, but don't worry - sit back, relax, and let the magic load in.</p>
-       </div>
-       
+              
        <div class="teejay">
            <nav>
                <a href="index.html">
@@ -229,18 +224,6 @@
                });
            });
 
-           
-           // preloader
-           window.addEventListener("load", function() {
-               const preloader = document.querySelector(".preloader");
-               preloader.classList.add("hide-preloader");
-               
-               // Wait for the hide-preloader animation to finish before restoring scroll
-               /*setTimeout(function() {
-                   document.documentElement.style.overflow = "auto";
-                   document.body.style.overflow = "auto";
-               }, 0);*/
-           });
            
            //Clients Logo Overlay
            function toggleOverlay() {
