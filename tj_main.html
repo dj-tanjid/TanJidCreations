@@ -1,8 +1,11 @@
 <!-- Written by TanJid -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head> 
        <title>TanJid Creations | Home</title>
+       <!-- 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       -->
        <link rel="icon" href="tj_portfolio_site_img/TJ_Avatar.png" type="image/icon type">
        
        <link rel="stylesheet" href="tj_style/tj_style.css">
@@ -28,20 +31,22 @@
            <div class="info">
                <h1>Md. <span>Tanjidul</span> Hossain</h1>
                <h2><span>Video</span> Editor | <span>VFX &amp; CG</span> Artist | <span>Sound</span> Designer</h2>
-               <p class="inf">Unleash the magic of creativity with me! Expert in VFX, Motion Design, Video Editing, CG, Photography, and Sound Design, ready to elevate your projects to the next level. To learn more, head to the <a href="tj_about.html">About</a> section.</p>
-               
+               <p class="inf">
+                   Unleash the magic of creativity with me! Expert in VFX, Motion Design, Video Editing, CG,
+                   Photography, and Sound Design, ready to elevate your projects to the next level. To learn more, head
+                   to the <a href="tj_about.html">About</a> section.
+               </p>
+
                <!-- CV Download -->
                <!-- Latest CV : https://drive.google.com/file/d/1Q7BHkH_d3dqy6aH9UCtLHtXZs_QTf_eG/view?usp=sharing -->
-               <a href="https://drive.google.com/uc?export=download&id=1Q7BHkH_d3dqy6aH9UCtLHtXZs_QTf_eG">
-                   <button id="tj_btn">
-                       <p id="tj_btnText">DOWNLOAD CV</p>
-                       <div class="check-box">
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                               <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                            </svg>
-                       </div>
-                   </button>
-               </a>
+               <button id="tj_btn">
+                   <p id="tj_btnText">DOWNLOAD CV</p>
+                   <div class="check-box">
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                           <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                       </svg>
+                   </div>
+               </button>
            </div>
            
            <div class="img-box">
@@ -72,9 +77,7 @@
            {
                btnText.innerHTML = "Thank You";
                btn.classList.add("active");
-               /*popup = window.open("https://drive.google.com/uc?export=download&id=1gmiXLfouMD8qD6c99B2tJLvfy32knoV8", "", "width=,height=,resizable=no");
-               window.blur();
-               window.focus();*/
+               window.location.href="https://drive.google.com/uc?export=download&id=1Q7BHkH_d3dqy6aH9UCtLHtXZs_QTf_eG";
            }
            
            
